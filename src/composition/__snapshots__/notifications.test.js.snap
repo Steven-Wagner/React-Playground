@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notifications Component renders the UI as expected 1`] = `
+<div
+  className="message"
+>
+  message
+  <div
+    className="number badge example"
+  >
+    4
+  </div>
+</div>
+`;
+
+exports[`Notifications Component renders the UI as expected 2`] = `
+<div
+  className="message"
+>
+  message
+</div>
+`;

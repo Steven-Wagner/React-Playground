@@ -1,28 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import Split from './composition/Split';
 import './App.css';
+import Tooltip from './composition/Tooltip';
+import BarbuttonsClass from './composition/barButtons';
+import Notifications from './composition/notifications';
+import TheDate from './state/TheDate';
+import Counter from './state/Counter/Counter';
+import Hello from './state-drills/helloWorld';
+import Bomb from './state-drills/Bomb';
+import RouletteGuess from './state-drills/RouletteGun';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+const firstTooltip = (
+  <Tooltip color='#126BCC' message='tooltip message'>
+   ipsum
+  </Tooltip>
+)
+
+const secondToolTip = (
+  <Tooltip color="hotpink" message='tooltip message'>
+    ipsum 2
+  </Tooltip>
+)
+
+function App() {
+  return (
+    <main className='App'>
+      <RouletteGuess />
+    </main>
+  )
 }
 
 export default App;
